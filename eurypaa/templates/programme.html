@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block title %}Plan your trip{% endblock %}
+{% block content %}
+
+<fieldset>
+<legend>Programme</legend>
+</fieldset>
+
+<h2>Alcoholics Anonymous</h2>
+
+<div class="row text-left">
+<div class="media well">
+  <div class="media-left">
+      <img class="media-object" src="{{ url_for('static', filename='images/aa.png') }}" alt="AA logo" />
+  </div>
+  <div class="media-body">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#aa-friday">Friday</a></li>
+        <li><a data-toggle="tab" href="#aa-saturday">Saturday</a></li>
+        <li><a data-toggle="tab" href="#aa-sunday">Sunday</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="aa-friday" class="tab-pane fade in active">
+            <h4>Friday</h4>
+              <p>Work in progress</p>
+        </div>
+        <div id="aa-saturday" class="tab-pane fade">
+            <h4>Saturday</h4>
+              <p>Work in progress</p>
+        </div>
+        <div id="aa-sunday" class="tab-pane fade">
+            <h4>Sunday</h4>
+              <p>Work in progress</p>
+        </div>
+    </div> <!-- close tabs -->
+  </div> <!-- close media-body -->
+</div> <!-- close media -->
+</div> <!-- close row -->
+
+<h2>Al-Anon/Alateen</h2>
+
+<p class=text-left>There are big plans for Al-Anon at Bath.  For the first time at Eurypaa we are planning a full programme of Al-Anon events, which will happen in a room dedicated to Al-Anon and Alateen.
+In addition to a few speaker meetings we plan two workshops on Al-Anon topics.  More on this soon.  There will also be a reception meeting where we will greet all those interested and/or curious about Al-Anon.  We will have leaflets available.
+There will be an Al-Anon literature stand with lots of books and leaflets for sale.  
+We have not finalised it yet, but if feasible we will have an Alateen meeting.
+At the convention’s main speaker meetings we will have an Al-Anon speaker and all being well and Alateen speaker too.
+So if your primary fellowship is Al-Anon there will be lots going on to serve you.  If you are a duel member (or double winner as we like to call you) or a member of AA alone, bring your Al-Anon family and friends to the convention knowing they will not be left out.
+</p>
+
+<h3>In the Claverton Room</h3>
+
+<div class="row text-left">
+<div class="media well">
+  <div class="media-left">
+      <img class="media-object" src="{{ url_for('static', filename='images/alanon.png') }}" alt="Al-Anon logo" />
+  </div>
+  <div class="media-body">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#alanon-friday">Friday</a></li>
+        <li><a data-toggle="tab" href="#alanon-saturday">Saturday</a></li>
+        <li><a data-toggle="tab" href="#alanon-sunday">Sunday</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="alanon-friday" class="tab-pane fade in active">
+            <h4>Friday</h4>
+              <p>
+                <ul>
+                  <li>15:15 to 16:15 - Twelve Step meeting</li>
+                  <li>17:00 to 18:00 - Reception, welcoming everyone to Al-Anon</li>
+                </ul>
+              </p>
+        </div>
+        <div id="alanon-saturday" class="tab-pane fade">
+            <h4>Saturday</h4>
+              <p>
+                <ul>
+                  <li>10:00 to 11:00 - Speaker Meeting, led by Bath Al-Anon</li>
+                  <li>11:30 to 12:30 - Workshop, "Honesty" led by Barbara of Copenhagen Al-Anon</li>
+                  <li>14:00 to 15:00 - Workshop, "Boundaries" led by Eliza and Liz of Bristol Redland Tuesday Group</li>
+                  <li>15:15 to 16:15 - Speaker meeting led by Bristol Clifton Al-Anon Group</li>
+                  <li>16:30 to 17:30 - Alateen closed meeting</li>
+                </ul>
+              </p>
+        </div>
+        <div id="alanon-sunday" class="tab-pane fade">
+            <h4>Sunday</h4>
+              <p>No current plans</p>
+        </div>
+    </div> <!-- close tabs -->
+  </div> <!-- close media-body -->
+</div> <!-- close media -->
+</div> <!-- close row -->
+
+<h3>Shared platform meetings in main hall</h3>
+
+<div class="row text-left">
+<div class="media well">
+  <div class="media-left">
+      <img class="media-object" src="{{ url_for('static', filename='images/alanon.png') }}" alt="Al-Anon logo" />
+  </div>
+  <div class="media-body">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#alanon-friday-main">Friday</a></li>
+        <li><a data-toggle="tab" href="#alanon-saturday-main">Saturday</a></li>
+        <li><a data-toggle="tab" href="#alanon-sunday-main">Sunday</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="alanon-friday-main" class="tab-pane fade in active">
+            <h4>Friday</h4>
+              <p>
+                <ul>
+                  <li>20:00 to 21:00 - includes Molly, Al-Anon Copenhagen</li>
+                </ul>
+              </p>
+        </div>
+        <div id="alanon-saturday-main" class="tab-pane fade">
+            <h4>Saturday</h4>
+              <p>
+                <ul>
+                  <li>19:30 to 20:30 - includes Sarah, Alateen</li>
+                </ul>
+              </p>
+        </div>
+        <div id="alanon-sunday-main" class="tab-pane fade">
+            <h4>Sunday</h4>
+              <p>No current plans</p>
+        </div>
+    </div> <!-- close tabs -->
+  </div> <!-- close media-body -->
+</div> <!-- close media -->
+</div> <!-- close row -->
+
+<h3>Al-Anon Literature stall at Claverton Room</h3>
+
+
+
+{% endblock %}

@@ -1,0 +1,3 @@
+<pre>date_registered,paid,first_name,last_name,mobile,email,sobriety_date,ypaa_committee,member_of,special_needs,country,of_service
+{% for r in registrations %}{% if r.date_registered %}{{r.date_registered.strftime('%Y-%m-%d %H:%M')}}{% endif %},True,{{r.first_name}},{{r.last_name}},m{{r.mobile}},{{r.email}},{{r.sobriety_date}},{{r.ypaa_committee}},{{r.fellowship}},{{r.special_needs}},{{r.country}},{{r.of_service}}
+{% endfor %}</pre>

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+
+{% import 'macros.html' as macros %}
+
+        <fieldset>
+          <legend>Registration</legend>
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 well">
+              {% if registration_type == 'sat_no_meal' %}
+              Saturdau Only without Saturday evening meal. £10.00.
+              {% elif registration_type == 'sat_with_meal' %}
+              Saturday Only with Saturday evening meal. £19.00.
+              {% elif registration_type == 'full_no_meal' %}
+              Full Registration without Saturday evening Meal. £20.00.
+              {% elif registration_type == 'full_with_meal' %}
+              Full Registration with Saturday evening Meal. £29.00.
+              {% endif %}
+              <br><br>
+              <form role="form" action="{{ url_for('new_registration_type', registration_type=registration_type) }}" method="POST" accept-charset="utf-8">
+                {{ form.csrf_token }}
+                {{ macros.form_field(form.first_name) }}
+                {{ macros.form_field(form.last_name) }}
+                {{ macros.form_field(form.mobile, type="tel") }}
+                {{ macros.form_field(form.email, type="email") }}
+                {{ macros.form_field(form.country) }}
+                {{ macros.form_field(form.sobriety_date) }}
+                {{ macros.form_field(form.ypaa_committee) }}
+                {{ macros.form_field(form.fellowship) }}
+                {{ macros.form_field(form.special_needs) }}
+                <div class="checkbox"><label>{{ form.of_service }} {{ form.of_service.label.text }}</label></div><br>
+                <button type="submit" class="btn btn-success btn-lg">Proceed to Payment</button>
+              </form>
+            </div> <!-- col-md-4 -->
+            <div class="col-md-4"></div>
+          </div> <!-- row -->
+        </fieldset>
+{% endblock %}

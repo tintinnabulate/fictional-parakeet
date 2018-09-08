@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Pick your Registration Package{% endblock %}
+
+{% block content %}
+
+{% import 'macros.html' as macros %}
+
+        <fieldset>
+          <legend>Registration</legend>
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+		<p>
+		  <b>If you have booked/are going to book Bath University
+                  campus accommodation via the <a href="/accommodation">Accommodation</a> page
+                  <u>before the 8th August</u>, select the 'without meal' option</b>
+                </p>
+                <p>Otherwise, select the 'with meal' option</p>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item" href="/register/full_with_meal">All days & Saturday Meal <span class="badge">£29</span></a></li>
+                <a class="list-group-item list-group-item" href="/register/full_no_meal">All days, no Saturday Meal<span class="badge">£20</span></a></li>
+            <a class="list-group-item list-group-item" href="/register/sat_with_meal">Saturday only & Meal<span class="badge">£19</span></a></li>
+        <a class="list-group-item list-group-item" href="/register/sat_no_meal">Saturday only, no Meal <span class="badge">£10</span></a></li>
+                </div>
+            </div> <!-- col-md-4 -->
+            <div class="col-md-4"></div>
+          </div> <!-- row -->
+        </fieldset>
+{% endblock %}

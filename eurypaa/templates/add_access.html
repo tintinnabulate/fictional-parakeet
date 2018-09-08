@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}New Access Entry{% endblock %}
+
+{% block content %}
+    <h1 id="">Add a user</h1>
+    <form action="{{ url_for('add_access') }}" method="post" accept-charset="utf-8">
+        {{ form.csrf_token }}
+        {% for field in form %}
+        <label>{{ field.name}} {{ field }}</label><br>
+        {% endfor %}
+        <p><input type="submit" value="Store user"/></p>
+    </form>
+{% endblock %}

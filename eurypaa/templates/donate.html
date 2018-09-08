@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Donation{% endblock %}
+{% block content %}
+  <fieldset>
+    <legend>Donate</legend>
+    <p class=text-left>We welcome donations to support making this a great convention, but please bear in mind our Tradition 7:</p>
+    <p class="text-left text-success"><b>Every A.A. group ought to be fully self-supporting, declining outside contributions.</b></p>
+    <p class=text-left>We can ONLY accept donations from alcoholics. Many thanks</p>
+    <form action="{{ url_for('donate_charge') }}" method="post">
+      <article>
+        <label>
+            <span>Amount is <strong>£{{ '%(amt).2f'|format(amt=amount/100) }}</strong></span>
+        </label>
+      </article>
+
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="{{ key }}"
+              data-description="EURYPAA 2016 Donation"
+              data-currency="gbp"
+              data-amount="{{ amount }}"
+              data-locale="auto"></script>
+    </form>
+  </fieldset>
+
+{% endblock %}

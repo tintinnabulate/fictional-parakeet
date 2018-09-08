@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{ post.title }} | News{% endblock %}
+
+{% block content %}
+<link href="{{ url_for('static', filename='css/blog.css') }}" rel="stylesheet">
+<link href="{{ url_for('news_feed') }}" rel="alternate" title="EURYPAA 2016 News Feed" type="application/atom+xml">
+      <div class="blog-header">
+        <h1 class="blog-title">Convention News</h1>
+        <p class="lead blog-description">Updates and newsflashes about the convention.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">{{ post.title }}</h2>
+            <p class="blog-post-meta">{{ post.when.strftime("%c") }} by <a href="/contact">EURYPAA2016 Admin</a></p>
+
+          {{ post.content | safe }}
+
+          </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+          <div class="sidebar-module">
+            <h4>Feed</h4>
+            <ol class="list-unstyled">
+              <li><a href="{{ url_for('news_feed') }}">RSS</a></li>
+            </ol>
+          </div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+{% endblock %}

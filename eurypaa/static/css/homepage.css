@@ -1,0 +1,30 @@
+body {
+  background: url('/static/images/bath_background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+
+legend {
+  color: #222;
+  font-size: 50px;
+  text-shadow: 3px 3px #fff;
+}
+
+.container-info {
+  background-color: white;
+  max-width: 400px;
+  border-radius: 15px;
+  font-size: 25px;
+  opacity: 0.6;
+}
+
+.container-reserve {
+  color: #fff;
+  text-shadow: 3px 3px #000;
+  font-size: 35px;
+}
+
+.top-buffer { 
+  margin-top: 20px; 
+}

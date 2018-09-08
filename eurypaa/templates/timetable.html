@@ -1,0 +1,376 @@
+{% extends "base.html" %}
+
+
+{% block title %}Programme{% endblock %}
+{% block content %}
+
+<style>
+@media only screen and (max-width: 800px) {
+        /* Force table to not be like tables anymore */
+        #no-more-tables table,
+        #no-more-tables thead,
+        #no-more-tables tbody,
+        #no-more-tables th,
+        #no-more-tables td,
+        #no-more-tables tr {
+        display: block;
+        }
+         
+        /* Hide table headers (but not display: none;, for accessibility) */
+        #no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        }
+         
+        #no-more-tables tr { border: 1px solid #ccc; }
+          
+        #no-more-tables td {
+        /* Behave like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align:left;
+        }
+         
+        #no-more-tables td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+        }
+         
+        /*
+        Label the data
+        */
+        #no-more-tables td:before { content: attr(data-title); }
+        }
+</style>
+
+<fieldset>
+<legend>Programme</legend>
+</fieldset>
+
+<nav aria-label="...">
+  <ul class="pager">
+      <li><a href="#friday">Friday 19</a></li>
+      <li><a href="#saturday">Saturday 20</a></li>
+      <li><a href="#sunday">Sunday 21</a></li>
+  </ul>
+</nav>
+
+
+<a name="friday">&nbsp;</a>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">
+                        Friday 19<sup>th</sup>
+                    </h1>
+                </div>
+                <div id="no-more-tables">
+                    <table class="col-sm-12 table-bordered table-condensed table-striped cf">
+                		<thead class="cf">
+                			<tr>
+        						<th>      </th>
+                				<th>Founders</th>
+                				<th>Chancellors 1</th>
+                				<th>Chancellors 2</th>
+                				<th>Claverton</th>
+                				<th>Amphitheatre</th>
+                			</tr>
+                		</thead>
+                		<tbody class="text-left">
+                			<tr>
+                                <td data-title="      "><b>0730h -- 0900h</b></td>
+                                <td data-title="Breakfast" colspan=6><h4 class="text-center">Breakfast @ Lime Tree</h4></td>
+                			</tr>
+                			<tr>
+        						<td data-title="      "><b>1000h -- 1100h</b></td>
+                				<td data-title="Founders">Coffee</td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">-</td>
+                			</tr>
+                			<tr>
+        						<td data-title="      "><b>1100h -- 1200h</b></td>
+                				<td data-title="Founders">Coffee</td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">-</td>
+                			</tr>
+                			<tr>
+        						<td data-title="      "><b>1200h</b></td>
+                				<td data-title="Founders">Registration Opens</td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">-</td>
+            			</tr>
+            			<tr>
+    						    <td data-title="      "><b>1400h -- 1500h</b></td>
+                				<td data-title="Founders">-</td>
+                				<td data-title="Chancellors 1">General Meeting</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">-</td>
+            			</tr>
+            			<tr>
+    						    <td data-title="      "><b>1530h -- 1630h</b></td>
+                				<td data-title="Founders">-</td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">EURYPAA Bid Workshop - Noel P. (Ire)</td>
+                                <td data-title="Claverton">12 Step Meeting (Al-Anon)</td>
+                				<td data-title="Amphitheatre">-</td>
+            			</tr>
+            			<tr>
+    						    <td data-title="      "><b>1630h -- 1730h</b></td>
+                				<td data-title="Founders">-</td>
+                				<td data-title="Chancellors 1">Polish Meeting - Ania, Adam</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">Drumming/Singing Workshop</td>
+            			</tr>
+            			<tr>
+                                <td data-title="      "><b>1700h -- 1800h</b></td>
+                				<td data-title="Founders">-</td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">Welcoming all to Al-Anon</td>
+                				<td data-title="Amphitheatre">-</td>
+            			</tr>
+            			<tr>
+    						    <td data-title="      "><b>1800h -- 2000h</b></td>
+                                <td data-title="Dinner" colspan=6><h4 class="text-center">Dinner @ Lime Tree<br/>or Claverton</h4></td>
+            			</tr>
+            			<tr>
+    						    <td data-title="      "><b>2000h -- 2130h</b></td>
+                                <td data-title="Founders"><ul class="list-unstyled"><li>Welcome</li><li>Country Roll Call</li><li>3 Speaker Meeting:</li><li>Nathan (UK)</li><li>Molly (DK, Al-Anon)</li><li>Brian (USA)</li></ul></td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">-</td>
+            			</tr>
+            			<tr>
+    						    <td data-title="      "><b>2130h -- 0100h</b></td>
+                				<td data-title="Founders">-</td>
+                				<td data-title="Chancellors 1">0000h: Midnight Meeting</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">Music, Kareoke, Open Mic/Chill</td>
+                                <td data-title="Amphitheatre">2230h: Rendez-vous for "out out"<br>in Bath Nightclub (2230h -- late)</td>
+            			</tr>
+            		</tbody>
+            	</table>
+            </div>
+        </div>
+
+
+<a name="saturday">&nbsp;</a>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">
+                        Saturday 20<sup>th</sup>
+                    </h1>
+                </div>
+                <div id="no-more-tables">
+                    <table class="col-sm-12 table-bordered table-condensed table-striped cf">
+                		<thead class="cf">
+                			<tr>
+        						<th>      </th>
+                				<th>Founders</th>
+                				<th>Chancellors 1</th>
+                				<th>Chancellors 2</th>
+                				<th>Chancellors 3</th>
+                				<th>Claverton</th>
+                				<th>Amphitheatre</th>
+                			</tr>
+                		</thead>
+                		<tbody class="text-left">
+                			<tr>
+                                <td data-title="      "><b>0730h -- 0900h</b></td>
+                                <td data-title="Breakfast" colspan=6><h4 class="text-center">Breakfast @ Lime Tree</h4></td>
+                			</tr>
+
+                			<tr>
+        						<td data-title="      "><b>0730 -- 0815h</b></td>
+                				<td data-title="Founders">-</td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">-</td>
+                				<td data-title="Chancellors 3">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">Step 11 Meditation (Adrian R.)</td>
+                			</tr>
+                			<tr>
+        						<td data-title="      "><b>0900h</b></td>
+                				<td data-title="Founders">Registration</td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">-</td>
+                				<td data-title="Chancellors 3">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">-</td>
+                			</tr>
+                			<tr>
+        						<td data-title="      "><b>1000h -- 1200h</b></td>
+                				<td data-title="Founders">3 Speaker Meeting</td>
+                                <td data-title="Chancellors 1">Atheist/Agnostic<ul class="list-unstyled"><li>Jimi D. (UK)</li><li>Noel M. (UK)</li></ul></td>
+                                <td data-title="Chancellors 2">LGBTQ<ul class="list-unstyled"><li>Amanda (US)</li></ul></td>
+                                <td data-title="Chancellors 3">-</td>
+                                <td data-title="Claverton">Al-Anon Speaker Meeting</td>
+                				<td data-title="Amphitheatre">-</td>
+            			</tr>
+            			<tr>
+    						    <td data-title="      "><b>1130h -- 1230h</b></td>
+                                <td data-title="Founders">Old Timers Meeting<ul class="list-unstyled"><li>Phoebe</li></ul></td>
+                                <td data-title="Chancellors 1">Men's Meeting<br/>"A drunk like me"<ul class="list-unstyled"><li>Ev W. (Ire)</li><li>John (NZ)</li></ul></td>
+                                <td data-title="Chancellors 2">Women's Meeting<br/>"My chance to live"<ul class="list-unstyled"><li>Nadine C. (UK)</li><li>Maria B. (Swe)</li></ul></td>
+                				<td data-title="Chancellors 3">Polish Meeting<ul class="list-unstyled"><li>Ania</li><li>Wlodek</li></ul></td>
+
+                                <td data-title="Claverton">Al-Anon Workshop: "Honesty"</td>
+                				<td data-title="Amphitheatre">-</td>
+            			</tr>
+            			<tr>
+    						    <td data-title="      "><b>1230h -- 1400h</b></td>
+                                <td data-title="Lunch" colspan=6><h4 class="text-center">Lunch @ Lime Tree and/or<br/>Picnic/Sandwiches outside</h4></td>
+            			</tr>
+            			<tr>
+    						    <td data-title="      "><b>1400h -- 1500h</b></td>
+                                <td data-title="Founders">"Try it, you might like it... service that is".<ul class="list-unstyled"><li>Brian K. (US)</li><li>Tony C. (UK)</li></ul></td>
+                				<td data-title="Chancellors 1">Share-back Meeting</td>
+                				<td data-title="Chancellors 2">Atheist Workshop</td>
+                                <td data-title="Chancellors 3">-</td>
+                				<td data-title="Claverton">Al-Anon Workshop: "Boundaries"</td>
+                				<td data-title="Amphitheatre">-</td>
+            			</tr>
+            			<tr>
+                                <td data-title="      "><b>1530h -- 1630h</b></td>
+                                <td data-title="Founders">"This is not a meeting about sex... (okay, it is)".<ul class="list-unstyled"><li>Julie P. (US)</li><li>Andrew B. (Can)</li></ul></td>
+                				<td data-title="Chancellors 1">Share-back Meeting</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Chancellors 3">1530h -- 1700h: Polish Meeting<ul class="list-unstyled"><li>Ola</li><li>Eliza</li><li>Artur</li></ul></td>
+                                <td data-title="Claverton">Al-Anon Speaker Meeting</td>
+                				<td data-title="Amphitheatre">-</td>
+            			</tr>
+            			<tr>
+    						    <td data-title="      "><b>1700h -- 1800h</b></td>
+                                <td data-title="Founders">-</td>
+                                <td data-title="Chancellors 1">-</td>
+                                <td data-title="Chancellors 2">Rebellion Dogs!!!</td>
+                                <td data-title="Chancellors 3">-</td>
+                                <td data-title="Claverton">Alateen (Closed)</td>
+                                <td data-title="Amphitheatre">-</td>
+            			</tr>
+
+            			<tr>
+    						    <td data-title="      "><b>1800h -- 1945h</b></td>
+                                <td data-title="Dinner" colspan=6><h4 class="text-center">Dinner @ Lime Tree<br/>or Claverton</h4></td>
+            			</tr>
+
+            			<tr>
+    						    <td data-title="      "><b>1945h -- 2100h</b></td>
+                                <td data-title="Founders">Main Meeting<ul class="list-unstyled"><li>Mathilde (UK)</li><li>Sarah (Alateen)</li><li>Gillian (Scot)</li></ul></td>
+                                <td data-title="Chancellors 1">-</td>
+                                <td data-title="Chancellors 2">-</td>
+                                <td data-title="Chancellors 3">-</td>
+                                <td data-title="Claverton">-</td>
+                                <td data-title="Amphitheatre">-</td>
+            			</tr>
+
+            			<tr>
+    						    <td data-title="      "><b>2130h -- 2330h</b></td>
+                                <td data-title="Founders">"Barn Dance"</td>
+                                <td data-title="Chancellors 1">-</td>
+                                <td data-title="Chancellors 2">-</td>
+                                <td data-title="Chancellors 3">-</td>
+                                <td data-title="Claverton">-</td>
+                                <td data-title="Amphitheatre">-</td>
+            			</tr>
+
+            			<tr>
+    						    <td data-title="      "><b>2130h -- 0100h</b></td>
+                                <td data-title="Founders">DJ</td>
+                                <td data-title="Chancellors 1">0000h: Midnight Meeting</td>
+                                <td data-title="Chancellors 2">-</td>
+                                <td data-title="Chancellors 3">-</td>
+                                <td data-title="Claverton">Chill/Open Mic</td>
+                                <td data-title="Amphitheatre">-</td>
+            			</tr>
+
+
+            		</tbody>
+            	</table>
+            </div>
+        </div>
+
+
+<a name="sunday">&nbsp;</a>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">
+                        Sunday 21<sup>st</sup>
+                    </h1>
+                </div>
+                <div id="no-more-tables">
+                    <table class="col-sm-12 table-bordered table-condensed table-striped cf">
+                		<thead class="cf">
+                			<tr>
+        						<th>      </th>
+                				<th>Founders</th>
+                				<th>Chancellors 1</th>
+                				<th>Chancellors 2</th>
+                				<th>Claverton</th>
+                				<th>Amphitheatre</th>
+                			</tr>
+                		</thead>
+                		<tbody class="text-left">
+                			<tr>
+                                <td data-title="      "><b>0730h -- 0900h</b></td>
+                                <td data-title="Breakfast" colspan=6><h4 class="text-center">Breakfast @ Lime Tree</h4></td>
+                			</tr>
+                			<tr>
+        						<td data-title="      "><b>0730h -- 0815h</b></td>
+                				<td data-title="Founders">-</td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">Step 11 Meditation (Adrian R.)</td>
+                			</tr>
+                			<tr>
+        						<td data-title="      "><b>0930h -- 1000h</b></td>
+                				<td data-title="Founders"></td>
+                				<td data-title="Chancellors 1">Atheist/Agnostic Meeting</td>
+                				<td data-title="Chancellors 2">Share-back meeting</td>
+                                <td data-title="Claverton">Al-Anon Meeting</td>
+                				<td data-title="Amphitheatre">-</td>
+                			</tr>
+                			<tr>
+        						<td data-title="      "><b>1100h -- 1200h</b></td>
+                                <td data-title="Founders"><ul class="list-unstyled"><li>Mark (UK)</li><li>Mickey B. (UK)</li></ul></td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">-</td>
+                			</tr>
+                			<tr>
+        						<td data-title="      "><b>1200h -- 1230h</b></td>
+                                <td data-title="Founders">Sobriety Countdown<br/>Serenity Prayer in all languages</td>
+                				<td data-title="Chancellors 1">-</td>
+                				<td data-title="Chancellors 2">-</td>
+                                <td data-title="Claverton">-</td>
+                				<td data-title="Amphitheatre">-</td>
+            			</tr>
+            		</tbody>
+            	</table>
+            </div>
+        </div>
+
+
+{% endblock %}

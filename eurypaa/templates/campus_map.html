@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Campus Map{% endblock %}
+{% block content %}
+
+<fieldset>
+<legend>Campus Map</legend>
+
+<p class=text-left>
+</p>
+
+</fieldset>
+
+<a href="{{ url_for('static', filename='images/campus_map.jpg') }}" alt="Download Campus Map"><img class="img-responsive" src="{{ url_for('static', filename='images/campus_map.jpg') }}" alt="Campus Map"><br>
+Download Campus Map</a>
+
+{% endblock %}

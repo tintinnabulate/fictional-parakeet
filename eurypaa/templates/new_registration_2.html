@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Registration | Payment{% endblock %}
+{% block content %}
+  <fieldset>
+    <legend>Payment Secured by Stripe</legend>
+    <form action="{{ url_for('charge') }}" method="post">
+      <article>
+        <label>
+            <span>Amount is <strong>£{{ '%(amt).2f'|format(amt=amount/100) }}</strong></span>
+        </label>
+      </article>
+
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="{{ key }}"
+              data-description="EURYPAA 2016 Registration"
+              data-email="{{ email }}"
+              data-currency="gbp"
+              data-amount="{{ amount }}"
+              data-locale="auto"></script>
+    </form>
+  </fieldset>
+
+{% endblock %}

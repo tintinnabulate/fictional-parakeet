@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<ul>
+    {% for registration in registrations %}
+    <li>
+        {{ registration.first_name }}, {{ registration.sobriety_date }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

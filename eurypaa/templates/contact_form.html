@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+{% import 'macros.html' as macros %}
+
+        <fieldset>
+          <legend>Contact us</legend>
+            <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 well">
+              <form role="form" method="POST" action="{{ url_for('contact') }}">
+              <p>
+                {{ form.csrf_token }}
+                {{ macros.form_field(form.name) }}
+                {{ macros.form_field(form.email, type="email") }}
+                {{ macros.form_field(form.subject) }}
+                {{ macros.form_field(form.message) }}
+              </p>
+                <p>
+                  {% for error in form.recaptcha.errors %}
+                    {{ error }}
+                  {% endfor %}
+                  {{ form.recaptcha }}
+                </p>
+              <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+              </form>
+            </div> <!-- col-md-4 -->
+            <div class="col-md-4"></div>
+          </div> <!-- row -->
+        </fieldset>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% block navbar %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ url_for('homepage') }}"><img alt="AA symbol" src="{{ url_for('static', filename='images/favicon.png') }}"></a><a class="navbar-brand" href="{{url_for('homepage')}}"> EURYPAA 2016</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('homepage') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Bath</a></li>
+            <li><a href="{{ url_for('plan_your_trip') }}">Plan your trip</a></li>
+            <li><a href="{{ url_for('new_registration_1') }}">Register</a></li>
+            <li><a href="{{ url_for('accommodation') }}">Accommodation</a></li>
+            <li><a href="{{ url_for('programme') }}">Programme</a></li>
+            <li><a href="{{ url_for('events') }}">Events</a></li>
+            <li><a href="{{ url_for('campus_map') }}">Map</a></li>
+            <li><a href="{{ url_for('list_posts') }}">News</a></li>
+            <li><a href="{{ url_for('donate') }}">Donate</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+{% endblock %}

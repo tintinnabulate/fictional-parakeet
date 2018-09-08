@@ -1,0 +1,215 @@
+{% extends "base.html" %}
+{% block title %}Plan your trip{% endblock %}
+{% block content %}
+
+<fieldset>
+<legend>Where is Bath?</legend>
+</fieldset>
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4982876.763628301!2d-2.144803437500009!3d52.423976983276894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487178a6743ee12d%3A0x138b27d0d66d9a09!2sBath%2C+Bath+and+North+East+Somerset!5e0!3m2!1sen!2suk!4v1441920388939" style="border:0" allowfullscreen="" frameborder="0" height="600" width="800"></iframe>
+</div>
+
+<h2>Getting Here</h2>
+
+<div class="row text-left">
+<div class="media well">
+  <div class="media-left">
+      <img class="media-object" src="{{ url_for('static', filename='images/plane-icon.png') }}" alt="Plane icon" />
+  </div>
+  <div class="media-body">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#heathrow">London Heathrow</a></li>
+        <li><a data-toggle="tab" href="#bristol">Bristol Airport</a></li>
+        <li><a data-toggle="tab" href="#gatwick">London Gatwick</a></li>
+        <li><a data-toggle="tab" href="#other">Other Airports</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="heathrow" class="tab-pane fade in active">
+            <h4>London Heathrow</h4>
+              <p>For trans-Atlantic flights the best airport to fly into is London Heathrow (LHR). It has direct coach (bus) connection with Bath via <a href="http://www.nationalexpress.com/home.aspx" rel="nofollow" target="_blank">National Express</a>, and has express train service to London Paddington via <a href="https://www.heathrowexpress.com/" rel="nofollow" target="_blank">Heathrow Express</a>. London Paddington is located in central London, ideal for tourist destinations and is also the station for direct rail service to Bath Spa for the convention.</p>
+        </div>
+        <div id="bristol" class="tab-pane fade">
+            <h4>Bristol Airport</h4>
+              <p>From European destinations we recommend flying into Bristol International Airport (BRS) if you will not be visiting London on your trip. Bristol Airport has direct coach service to Bath via <a href="https://www.airdecker.com/" rel="nofollow" target="_blank">Air Decker</a> at a rate of £20 return (round trip)&nbsp;and is less than half the journey time of travelling from Heathrow.</p>
+        </div>
+        <div id="gatwick" class="tab-pane fade">
+            <h4>London Gatwick</h4>
+              <p>London Gatwick (LGW) also provides coach service to Bath via National Express but tickets are generally more expensive than those from Heathrow. Additionally, the <a href="http://www.gatwickexpress.com/" rel="nofollow" target="_blank">Gatwick Express</a>&nbsp;train service&nbsp;travels to London Victoria, requiring a tube journey to London Paddington for connecting trains to Bath Spa.</p>
+        </div>
+        <div id="other" class="tab-pane fade">
+            <h4>Other Airports</h4>
+            <p>
+              <ul>
+                <li>Birmingham Airport</li>
+                <li>London Stansted</li>
+                <li>London Luton</li>
+              </ul>
+            </p>
+        </div> <!-- close other -->
+    </div> <!-- close tabs -->
+  </div> <!-- close media-body -->
+</div> <!-- close media -->
+</div> <!-- close row -->
+
+<div class="row text-left">
+<div class="media well">
+  <div class="media-left">
+      <img class="media-object" src="{{ url_for('static', filename='images/train-icon.png') }}" alt="Train icon" />
+  </div>
+  <div class="media-body">
+  <h4 class="media-heading">Bath Spa Train Station</h4>
+    <p>Bath Spa rail station is located in central Bath right next to the coach (bus) station and is on the main Great Western Main line which runs from London Paddington to Bristol and on to south Wales. The train operator between London and Bath is First Great Western but we recommend purchasing tickets and planning your journey through the <a href="http://www.thetrainline.com/" rel="nofollow" target="_blank">trainline</a> website and mobile app (<a href="https://itunes.apple.com/gb/app/thetrainline-get-live-train/id334235181?mt=8" rel="nofollow" target="_blank">iOS</a> | <a href="https://play.google.com/store/apps/details?id=com.thetrainline&hl=en_GB" rel="nofollow" target="_blank">Android</a>) or through <a href="http://www.redspottedhanky.com/" rel="nofollow" target="_blank">Red Spotted Hanky</a>.</p>
+
+    <p>Please Note: We recommend planning and purchasing rail travel as far in advance as possible for the lowest fares. Purchasing tickets 2 months in advance will usually result in fares half price or lower.</p>
+</div> <!-- close media-body -->
+</div> <!-- close media -->
+</div> <!-- close row -->
+
+<div class="row text-left">
+<div class="media well">
+  <div class="media-left">
+      <img class="media-object" src="{{ url_for('static', filename='images/bus-icon.png') }}" alt="Bus icon" />
+  </div>
+  <div class="media-body">
+  <h4 class="media-heading">Bath Spa Coach Station</h4>
+  <p>Bus service from central Bristol to Bath Bus Station is via <a href="http://www.firstgroup.com/bristol-bath-and-west" rel="nofollow" target="_blank">FirstBus</a>, and bus service from the centre of Bath to the University runs every 15-20 minutes throughout the day via <a href="http://www.firstgroup.com/bristol-bath-and-west/plan-journey/timetables/?print=pdf&amp;source_id=2&amp;service=18&amp;routeid=13202181&amp;operator=3&amp;day=1" rel="nofollow" target="_blank">FirstBus 18</a> or <a href="http://www.uni-connect.com/#/services/4549288314" rel="nofollow" target="_blank">Wessex Uniconnect U18</a>.</p>
+</div> <!-- close media-body -->
+</div> <!-- close media -->
+</div> <!-- close row -->
+
+<h2>Where to Stay</h2>
+
+<div class="row text-left">
+<div class="media well">
+  <div class="media-left">
+      <img class="media-object" src="{{ url_for('static', filename='images/bath-uni-logo.png') }}" alt="Bath Uni Logo" />
+  </div>
+  <div class="media-body">
+  <h4 class="media-heading">Bath University</h4>
+    <p>On-site accommodation booking is available separately through Bath University: click this <a href="/accommodation" class="button btn-sm btn-success">Accommodation Booking</a> link to book your convention accommodation.</p>
+    <p>For&nbsp;guests who have additional needs, or for those wanting double beds, rooms are available in <a href="http://www.bath.ac.uk/study/pg/accommodation/university-owned/woodland-court/" rel="nofollow" target="_blank">Woodland Court</a>. All rooms are ensuite, with doubles and large showers available as well as flat screens and VOIP phones.</p>
+</div> <!-- close media-body -->
+</div> <!-- close media -->
+</div> <!-- close row -->
+
+<div class="row text-left">
+<div class="media well">
+  <div class="media-left">
+      <img class="media-object" src="{{ url_for('static', filename='images/YouthHostelsAssociation.png') }}" alt="Youth Hostels Association Bath Logo">
+  </div>
+  <div class="media-body">
+  <h4 class="media-heading">YHA Hostel</h4>
+    <p>Additional accommodation is also available at the <a href="http://www.yha.org.uk/hostel/bath" rel="nofollow" target="_blank">YHA Hostel</a> on Bathwick Hill. Located just 10 minutes walk from the University, this grand hostel features stunning architecture, gardens and views over Bath with shared dorms starting at just £21.50 pp/night.</p>
+</div> <!-- close media-body -->
+</div> <!-- close media -->
+</div> <!-- close row -->
+
+<h2>Things to do</h2>
+
+
+<div class="row text-left">
+<div class="media well">
+  <div class="media-left">
+      <img class="media-object img-rounded" src="{{ url_for('static', filename='images/thermae-sign.jpg') }}" alt="Thermae Bath Spa Sign" />
+  </div>
+  <div class="media-body">
+  <h4 class="media-heading">Thermae Bath Spa</h4>
+  <p>At the Thermae Bath Spa, visitors can soak in the same naturally warm and mineral rich waters that the Celts and Romans did over 2000 years ago.</p>
+  <p>First discovered in 863 BC, the source of the water remains somewhat in mystery but it is believed to have fallen as rain water about 10,000 years ago before passing through carboniferous limestone to a depth of 2km. There the water is heated by high temperature rock before rising back up into one of three hot springs in the centre of the city. There is also a rooftop pool with stunning views across the city and beyond.</p>
+</div> <!-- close media-body -->
+</div> <!-- close media -->
+</div> <!-- close row -->
+
+<div class="row">
+<img class="img-responsive img-rounded" src="{{ url_for('static', filename='images/thermae1.jpg') }}" alt="Thermae Bath Rooftop Photo" />
+</div> <!-- close row -->
+
+<br>
+
+<div class="row text-left">
+  <div class="media well">
+      <div class="media-left">
+          <a name="sports-facilities" id="sports-facilities"><img class="media-object img-rounded" src="{{ url_for('static', filename='images/sports_facilities.jpg') }}" alt="Sports Facilities" /></a>
+      </div>
+      <div class="media-body">
+      <h4 class ="media-heading">Sports Facilities</h4>
+        <p>Remember to bring your sports kit! The convention venue is home to a renowned £30 million Sports Training Village (STV) on campus which houses sport, fitness, coaching, physio and sport science facilities all largely under one roof. The STV has indoor and outdoor facilities to accommodate more than 50 sports and regularly hosts major international competitions as well as being a world-class multi-sport training environment. Visit the <a href="http://www.teambath.com/sport/recreation/" rel="nofollow" target="_blank">TEAM BATH website</a> and see the <a href="http://www.teambath.com/about/times-prices/" rel="nofollow" target="_blank">Sports facility timetable & price list</a>, or alternatively call Sports Training Village reception on <b>+44 (0)1225 386339</b>.</p>
+
+        <h5>The facilities include:</h5>
+        
+        <p>
+          <ul class="list-unstyled">
+            <li>London 2012 Olympic Legacy 50m swimming pool</li>
+            <li>High performance and general fitness gyms</li>
+            <li>Outdoor floodlit 400m athletics track</li>
+            <li>Indoor sprint track</li>
+            <li>Three large sprung-wood sports halls (netball, badminton, basketball, football, cricket etc)</li>
+            <li>Outdoor (including clay) and indoor tennis courts</li>
+            <li>Judo dojo</li>
+            <li>Indoor jumps and throws hall</li>
+            <li>Fencing pistes</li>
+            <li>Indoor and outdoor shooting ranges</li>
+            <li>The UK’s only bobsleigh/skeleton push-start track</li>
+            <li>Dedicated rugby and football and other sports pitches</li>
+            <li>Outdoor water and sand-based hockey pitches</li>
+            <li>Physio treatment areas and sport science labs</li>
+            <li>3G pitches (future development)</li>
+            <li>Squash courts</li>
+          </ul>
+        </p>
+      </div> <!-- media-body -->
+    </div> <!-- media -->
+  </div> <!-- row -->
+
+<div class="row">
+<center>
+<div id="sports-slide" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#sports-slide" data-slide-to="0" class="active"></li>
+    <li data-target="#sports-slide" data-slide-to="1"></li>
+    <li data-target="#sports-slide" data-slide-to="2"></li>
+    <li data-target="#sports-slide" data-slide-to="3"></li>
+    <li data-target="#sports-slide" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="{{ url_for('static', filename='images/sports-slide-1.jpg') }}" alt="Roman Spa Baths">
+    </div>
+
+    <div class="item">
+      <img src="{{ url_for('static', filename='images/sports-slide-2.jpg') }}" alt="Aerial view of Bath City">
+    </div>
+
+    <div class="item">
+      <img src="{{ url_for('static', filename='images/sports-slide-3.jpg') }}" alt="The Royal Crescent">
+    </div>
+
+    <div class="item">
+      <img src="{{ url_for('static', filename='images/sports-slide-4.jpg') }}" alt="Bath Abbey and River">
+    </div>
+
+    <div class="item">
+      <img src="{{ url_for('static', filename='images/sports-slide-5.jpg') }}" alt="Pulteney Bridge Wier">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#sports-slide" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#sports-slide" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</center>
+</div>
+
+
+
+{% endblock %}

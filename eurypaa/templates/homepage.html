@@ -1,0 +1,25 @@
+{% extends "homepage-base.html" %}
+{% block title %}Home{% endblock %}
+{% block navbar %}
+            <li class=active><a href="{{ url_for('homepage') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Bath</a></li>
+            <li><a href="{{ url_for('plan_your_trip') }}">Plan your trip</a></li>
+            <li><a href="{{ url_for('new_registration_1') }}">Register</a></li>
+            <li><a href="{{ url_for('list_posts') }}">News</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+{% endblock %}
+{% block content %}
+<link href={{ url_for('static', filename='css/homepage.css') }} rel="stylesheet">
+  <fieldset>
+  <legend>The All-Europe Young People in Alcoholics Anonymous Convention 2016</legend>
+  <div class="container container-info">August 19<sup>th</sup>&#151;21<sup>st</sup><br>
+  Bath, UK</div>
+  <form method=get action={{ url_for('new_registration_1') }}><br><br>
+  <label>
+  <div class="container container-reserve">Reserve a ticket for your place at this fantastic AA convention!</div>
+  <br>
+  <input type=submit class="btn btn-success btn-lg" value=Register>
+  </label>
+  </form>
+  </fieldset>
+{% endblock %}

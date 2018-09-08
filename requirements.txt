@@ -1,0 +1,14 @@
+# This requirements file lists all third-party dependencies for this project.
+#
+# Run 'pip install -r requirements.txt -t lib/' to install these dependencies
+# in `lib/` subdirectory.
+#
+# Note: The `lib` directory is added to `sys.path` by `appengine_config.py`.
+Flask==0.10
+WTForms==2.1
+Flask-WTF==0.12
+simplejson==3.8.0
+stripe==1.27.1
+postmonkey==1.0b
+requests==2.3
+python-slugify==1.2.0

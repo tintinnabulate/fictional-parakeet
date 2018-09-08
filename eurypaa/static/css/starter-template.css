@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -200px;
+  /* Pad bottom by footer height */
+  padding: 0 0 200px;
+}
+
+/* Set the fixed height of the footer here */
+.footer {
+  height: 10px;
+}
+
+.starter-template {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+legend {
+  font-size: 40px;
+} 
+
+.flashed-messages {
+  padding: 50px 15px;
+}
+
+.flashed-message {
+  padding: 50px 15px;
+}
+
+.footer-rule {
+  opacity: 0.1; 
+  background-color: #000; 
+  height: 5px;
+}
+
+.carousel {
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+}
