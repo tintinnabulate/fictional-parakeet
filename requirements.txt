@@ -10,5 +10,5 @@ Flask-WTF==0.12
 simplejson==3.8.0
 stripe==1.27.1
 postmonkey==1.0b
-requests==2.3
+requests>=2.20.0
 python-slugify==1.2.0
